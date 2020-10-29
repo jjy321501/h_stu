@@ -6,7 +6,7 @@
     <title>Step08_table3.html</title>
     <style>
         table{
-            border-collapse: collapse;
+            border-collapse: collapse 
         }
     </style>
 </head>
@@ -34,12 +34,13 @@
             <td>14</td>
             <td>15</td>
         </tr>
-    </table>
 
-    <h1>1, 2 칼럼 합치기</h1>
+    </table>
+    
+    <h1>1,2 칼럼 합치기</h1>
     <table border="1">
         <tr>
-            <td colspan="2">1</td><!-- colspan="합칠 칼럼의 갯수" -->
+            <td colspan="2">1</td> <!--colspan="합칠 칼럼의수"-->
             <!-- <td>2</td> -->
             <td>3</td>
             <td>4</td>
@@ -59,9 +60,10 @@
             <td>14</td>
             <td>15</td>
         </tr>
+
     </table>
 
-    <h1>9, 10 칼럼 합치기</h1>
+    <h1>9,10 칼럼 합치기</h1>
     <table border="1">
         <tr>
             <td>1</td>
@@ -84,12 +86,13 @@
             <td>14</td>
             <td>15</td>
         </tr>
+
     </table>
 
     <h1>1, 6 칼럼 합치기</h1>
     <table border="1">
         <tr>
-            <td rowspan="2">1</td> <!-- rowspan="합칠 로우의 갯수" -->
+            <td rowspan="2">1</td> <!--rowspan="합칠 로우의개수"-->
             <td>2</td>
             <td>3</td>
             <td>4</td>
@@ -109,6 +112,7 @@
             <td>14</td>
             <td>15</td>
         </tr>
+
     </table>
 
     <h1>10, 15 칼럼 합치기</h1>
@@ -125,7 +129,7 @@
             <td>7</td>
             <td>8</td>
             <td>9</td>
-            <td rowspan="2">10</td>
+            <td rowspan="2">10</td> <!--rowspan="합칠 로우의수"-->
         </tr>
         <tr>
             <td>11</td>
@@ -134,20 +138,21 @@
             <td>14</td>
             <!-- <td>15</td> -->
         </tr>
+
     </table>
 
     <h1>1,2,6,7 칼럼 합치기</h1>
     <table border="1">
         <tr>
-            <td colspan="2" rowspan="2">1</td>
+            <td colspan="2"rowspan="2">1</td>
             <!-- <td>2</td> -->
             <td>3</td>
             <td>4</td>
             <td>5</td>
         </tr>
         <tr>
-            <!-- <td>6</td>
-            <td>7</td> -->
+            <!-- <td>6</td> -->
+            <!-- <td>7</td> -->
             <td>8</td>
             <td>9</td>
             <td>10</td>
@@ -159,6 +164,35 @@
             <td>14</td>
             <td>15</td>
         </tr>
+
     </table>
+
+    <h1>합치기</h1>
+    <table border="1">
+        <tr aria-colspan="3" aria-rowspan="3">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <!-- <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr> -->
+
+    </table>
+
 </body>
 </html>

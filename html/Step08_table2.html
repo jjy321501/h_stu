@@ -12,12 +12,13 @@
 </head>
 <body>
     <h1>table 요소 사용하기</h1>
+    <!--캡션,칼그룹,티헤드는 table의 자식요소 col,tr,th,td 자손요소-->
     <table border="1">
         <caption>회원 목록</caption>
         <colgroup>
             <col width="100">
             <col width="200">
-            <col width="300">
+            <col width="300">  
         </colgroup>
         <thead>
             <tr>
@@ -38,47 +39,49 @@
                 <td>행신동</td>
             </tr>
         </tbody>
-    </table> 
-
+    </table>
+    
     <h1>tfoot 이 있는 table</h1>
+    <!--tfoot 구조상 위에 있지만 출력시 아래에위치-->
     <table border="1">
         <caption>GS25 현금, 카드 매출 내역</caption>
-        <colgroup>
-            <col width="200">
-            <col width="100">
-            <col width="100">
-        </colgroup>
-        <thead>
-            <tr>
-                <th>상품명</th>
-                <th>현금</th>
-                <th>카드</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th>합계</th>
-                <td>4,300원</td>
-                <td>800원</td>
-            </tr>
-        </tfoot>
-        <tbody>
-            <tr>
-                <td>삼각김밥</td>
-                <td>800</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>도시락</td>
-                <td>3,500</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>박카스</td>
-                <td>0</td>
-                <td>800</td>
-            </tr>
-        </tbody>
+            <colgroup>
+                <col width="200">
+                <col width="100">
+                <col width="100">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>상품명</th>
+                    <th>현금</th>
+                    <th>카드</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <td>4,300원</td>
+                    <td>800원</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>삼각김밥</td>
+                    <td>800</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>도시락</td>
+                    <td>3,500</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>박카스</td>
+                    <td>0</td>
+                    <td>800</td>
+                </tr>
+            </tbody>                
+
     </table>
 </body>
 </html>

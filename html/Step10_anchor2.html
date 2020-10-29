@@ -12,31 +12,36 @@
         }
         .spacer{
             height: 500px;
-            background-color: yellow;
+            background-color: rgb(109, 209, 16);
         }
+        
     </style>
 </head>
 <body>
+    <script>
+        alert('페이지가 로딩됩니다'); //자바스크립트 영역(로딩시점)
+    </script>
     <div class="container">
         <h1>anchor 의 다른 기능</h1>
         <ul>
-            <!-- 책갈피 기능 -->
+            <!--책갈피 기능-->
             <li><a href="#one">one</a></li>
             <li><a href="#two">two</a></li>
-            <li><a href="#three">three</a></li>
-            <!-- javascript 실행-->
-            <li><a href="javascript:alert('hello~');">눌러보셈</a></li>
-            <!-- mobile 기기에서 테스트 가능한 기능 -->
+            <li><a href="#thtree">three</a></li>
+            <!--javascript 실행-->
+            <li><a href="javascript:alert('hello~');">눌러보셈</a></li> <!--자바스크립트영역 (링크를 누를때)-->
             <li><a href="tel:010-1111-2222">전화걸기</a></li>
-            <li><a href="mailto:aaa@naver.com">이메일 쓰기</a></li>
+            <li><a href="mailto:aaa@naver.com">이메일쓰기</a></li>
         </ul>
         <div class="spacer"></div>
-        <p id="one">one 입니다.</p>
+        <p id="one">one 입니다</p>
         <div class="spacer"></div>
-        <p id="two">two 입니다.</p>
+        <p id="two">two 입니다</p>
         <div class="spacer"></div>
-        <p id="three">three 입니다.</p>
+        <p id="three">three 입니다</p>
         <div class="spacer"></div>
     </div>
+    
+    a
 </body>
 </html>
