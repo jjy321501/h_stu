@@ -15,7 +15,20 @@
 
         //다른 data type 을 활용하면 1개의 변수명으로 한명의 정보관리 가능
         var mem1={num:1, name:"김구라", addr:"노량진"};
-        var mem2={num:2, name:"해골", addr:"노량진"};
+        var mem2={num:2, name:"해골", addr:"행신동"};
+        //num,name,addr 이미 만들어진 밸류 참조 가능
+        var mem3={num:num, name:name, addr:addr};
+
+        var a=mem1.num; //1
+        var b=mem2.name; //"해골"
+        var c=mem3.addr; //"노량진"
+
+        //data type 의 특정방을 참조해서 수정하기
+        mem1.num=999;
+        mem1.name="이정호"
+        
+        //object type 의 특정방을 참조해서 함수에서 바로 사용하기
+        alert(mem2.addr);
 
         var info1={empno:8000, ename:"Smith", sal:"5000"};
     </script>
