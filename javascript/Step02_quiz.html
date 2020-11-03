@@ -9,7 +9,9 @@
     <button id="countBtn" onclick="increase();">0</button>
     <script>
         //버튼을 누를때마다 innertext가 1씩 증가되게 해보시오
+        // 페이지가 로딩 되는 시점에 count 값을 0으로 초기화
         var count=0;
+        //함수가 호출될 때 마다
         function increase() {
             count=count+1;
             document.querySelector("#countBtn").innerText=count;
