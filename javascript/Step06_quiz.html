@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step06_quiz.html</title>
+</head>
+<body>
+    <h1>array 테스트중</h1>
+    <input type="text"id="inputName"placeholder="이름입력..">
+    <button onclick="saveToArray();">배열에 저장하기</button>
+    <button onclick="printToConsole();">저장된 내용 콘솔에 순서대로 출력</button>
+    <button onclick="printToList();">ul출력</button>
+    <h2>이름 목록입니다.</h2>
+    <ul id="nameList">
+
+    </ul>
+    <script>
+        //입력한 이름을 저장할 예정인 배열(ARRAY)미리 만들어 놓기
+        let names=[];
+        //input 요소에 입력한 문자열 읽어오기
+        let saveToArray=function(){
+            names.push(document.querySelector("#inputName").value);
+        }
+        //읽어온 문자열을 배열에 추가하기
+        let printToConsole= function(){
+            for(let i=0; i<names.length; i++){
+                console.log(names[i]);
+            }
+        }
+        
+        let printToList= function(){
+            //ul의 자식요소를 모두 삭제
+            document.querySelector("#nameList").innerText="";
+
+            //배열의 방 수 만큼 li 가 만들어져야함
+            for(let i=0; i<names.length; i++){
+                //li 만들고
+                let list = document.createElement("li");
+                //innerText 출력하고
+                list.innerText=names[i];
+                //ul에 보내기
+                document.querySelector("#nameList").append(list);
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
