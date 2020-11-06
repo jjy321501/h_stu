@@ -11,6 +11,7 @@
     <button onclick="saveToArray();">배열에 저장하기</button>
     <button onclick="printToConsole();">저장된 내용 콘솔에 순서대로 출력</button>
     <button onclick="printToList();">ul출력</button>
+    <button onclick="printToList2();">ul출력2</button>
     <h2>이름 목록입니다.</h2>
     <ul id="nameList">
 
@@ -28,7 +29,6 @@
                 console.log(names[i]);
             }
         }
-        
         let printToList= function(){
             //ul의 자식요소를 모두 삭제
             document.querySelector("#nameList").innerText="";
@@ -42,6 +42,18 @@
                 //ul에 보내기
                 document.querySelector("#nameList").append(list);
             }
+            
+        }
+        
+        let printToList2= function(){
+            //ul의 자식요소를 모두 삭제
+            document.querySelector("#nameList").innerText="";
+
+            names.forEach(function(item){
+                let list=document.createElement("li");
+                list.innerText=item;
+                document.querySelector("#nameList").append(list);
+            });
             
         }
     </script>
